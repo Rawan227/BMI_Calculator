@@ -29,26 +29,20 @@ class AgeWeightInput extends StatelessWidget {
           style: numericalTextStyle,
         ),
         Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Padding(
-              padding: const EdgeInsets.all(10.0),
-              child: ElevatedButton(
-                onPressed: plusClick,
-                style: plusMinusButtonsStyle,
-                child: const Icon(
-                  Icons.add,
-                  color: Colors.white,
-                ),
+            ElevatedButton(
+              onPressed: plusClick,
+              style: plusMinusButtonsStyle,
+              child: const Icon(
+                Icons.add,
+                color: Colors.white,
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(10.0),
-              child: ElevatedButton(
-                onPressed: minusClick,
-                style: plusMinusButtonsStyle,
-                child: const Icon(Icons.remove, color: Colors.white),
-              ),
+            ElevatedButton(
+              onPressed: minusClick,
+              style: plusMinusButtonsStyle,
+              child: const Icon(Icons.remove, color: Colors.white),
             ),
           ],
         ),
